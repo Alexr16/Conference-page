@@ -21,6 +21,21 @@ document.querySelectorAll('.item').forEach((n) => n.addEventListener('click', ()
   document.querySelector('body').classList.toggle('overflow-hidden');
 }));
 
+function speaker(textooos, image, title, altText, subtitle, paragraph) {
+  textooos.classList.add('spaeaker-card');
+  textooos.innerHTML = `
+      <div class="speaker-photo">
+          <img src="${image}" alt="${altText}">
+      </div>
+      <div class="speaker-info">
+          <h2>${title}</h2>
+          <p class="speaker-subtitle">${subtitle}</p>
+          <hr class="hr-speaker">
+          <p class="speaker-paragraph">${paragraph}</p>
+      </div>
+  `;
+}
+
 if (bodiId === 'home') {
   const speakers = document.createElement('div');
   const startBody = document.getElementById('partner');
@@ -41,21 +56,6 @@ if (bodiId === 'home') {
     image: ['images/speaker_01.png', 'images/speaker_02.png', 'images/speaker_03.png', 'images/speaker_04.png', 'images/speaker_07.png', 'images/speaker_06.png'],
     altText: ['Speaker 1', 'Speaker 2', 'Speaker 3', 'Speaker 4', 'Speaker 5', 'Speaker 6'],
   };
-
-  function speaker(textooos, image, title, altText, subtitle, paragraph) {
-      textooos.classList.add('spaeaker-card');
-      textooos.innerHTML = `
-        <div class="speaker-photo">
-            <img src="${image}" alt="${altText}">
-        </div>
-        <div class="speaker-info">
-            <h2>${title}</h2>
-            <p class="speaker-subtitle">${subtitle}</p>
-            <hr class="hr-speaker">
-            <p class="speaker-paragraph">${paragraph}</p>
-        </div>
-    `;
-  }
 
   const featuredSpeakers = document.createElement('section');
   featuredSpeakers.id = 'feature-speakers';
