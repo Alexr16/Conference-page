@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body id="about">
     <div class="social-tab">
         <ul class="social">
             <li class="social-item"><a href="#" class="social-media"><img src="images/facebook_icon.png"
@@ -21,10 +23,10 @@
     </div>
     <header>
         <nav class="nav-bar">
-            <div class="logo"><img src="images/logo.png" alt="logo"></div>
-
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
             <ul class="nav-list">
-                <li class="item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="item"><a class="nav-link mobile-menu" href="index.html">Home</a></li>
+                <li class="item"><a data-active="about" class="nav-link" href="about.html">About</a></li>
                 <li class="item"><a class="nav-link" href="#">Program</a></li>
                 <li class="item"><a class="nav-link" href="#">Join</a></li>
                 <li class="item"><a class="nav-link" href="#">Sponsor</a></li>
@@ -35,36 +37,34 @@
     </header>
     <div class="menu">
         <button id="hamburguer" class="menu-icon"><img src="images/mobile_menu.png" alt="hamburguer"></button>
-        <button class="menu-icon close-menu"><img src="images/close_mobile_menu.png" alt="close-icon"></button>
+        <button id="close" class="menu-icon close-menu show"><img src="images/close_mobile_menu.png" alt="close-icon"></button>
     </div>
     <section class="about-header">
-        <div>
-  
-        </div>
         <div class="about-headline-title">
-            <h1>"Hello! Sharing world"</h1>
-            <h2>CREATIVE COMMONS GLOBAL SUMMIT</h2>
-            <p class="about-headline-paragraph">A joyfull celebration believing in the value of openness and sharing, creating
-                a positive change with people from over 80 countries is taking place in October, in Korea.</p>
+            <h1>"Hello! Developers"</h1>
+            <h2>Summer Code Bootcamp</h2>
+            <p class="about-headline-paragraph">CODING DOJO gives you the chance to be a programmer in just 13-16 weeks.</p>
         </div>
         <div class="about-title">
-            <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+            <h1>CREATIVE COMMONS SUMMER CODE BOOTCAMP</h1>
             <hr class="hr-about-title">
         </div>
         <div class="about-paragraph">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>"CODING DOJO gives you the chance to be a programmer in just 13-16 weeks. First bootcamp in Ecuador that teaches you three programming full stacks, web fundamentals and more. Aimed at people who want to learn to program professionally and deepen their knowledge or redirect their career towards software development."</p>
         </div>
         <div class="about-second-paragraph">
-            <p>Please conatct us per Email for any further questions about CC Global Summit 2015!</p>
-            <h3>ccsummit2015@cckorea.org</h3>
+            <p>Please conatct us per Email for any further questions!</p>
+            <h3>summerboot2022@dojocod.ec</h3>
         </div>
     </section>
     <section class="creative">
         <div class="creative-content">
-            <h2>Creative Commons Global Summit 2015 Logo</h2>
+            <h2>Summer Coding Bootcamp Logo</h2>
             <hr class="creative-hr">
-            <p class="creative-content-desktop">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-            <p class="creative-content-mobile">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+            <p class="creative-content-desktop">On the front-end, we teach the language and tools you'll need to create what the user sees and how they interact with the site or mobile app.
+                On the back end you will learn how the software application works behind the scenes to produce the desired result.
+                In database we will show you how user information is stored. And we'll show you how cloud storage works.</p>
+            <p class="creative-content-mobile">On the front-end, we teach the language and tools you'll need to create what the user sees and how they interact with the site or mobile app.</p>
         </div>
         <div class="creative-logo">
             <img class="creative-logo-image" src="images/logo.png" alt="logo">
@@ -73,32 +73,35 @@
     <hr class="bottom-hr">
     <section class="see">
         <div class="see-title">
-            <h2>See the past CC Global Summits</h2>
+            <h2>See the past Summer Coding Bootcamps</h2>
             <hr class="see-hr">
-            <p>Take a look at the last two CC Global Summits  which took place in Buenos Aires and in Warsaw.</p>
+            <p>Take a look at the last two Summer Coding Bootcamps which took place in Guayaquill and in Quito.</p>
         </div>
         <div class="see-cards">
             <div class="see-card1">
-                <h3>2013</h3>
-                <p>CC Global Summit  2013 in Buenos Aires</p>
+                <h3>2020
+                </h3>
+                <p>Summer Coding Bootcamp 2020 in Guayaquil</p>
             </div>
             <div class="see-card2">
-                <h3>2013</h3>
-                <p>CC Global Summit  2013 in Buenos Aires</p>
+                <h3>2021
+                </h3>
+                <p>Summer C0ding Bootcamp 2021 in Quito</p>
             </div>
         </div>
     </section>
-    <section id="partner">
+    
+    <section id="about-partner">
         <div class="partner-title">
             <h2>Partner</h2>
             <hr class="hr-partner">
         </div>
-        <div class="partners-logos">
-            <ul class="partners">
+        <div class="partners-logos-mobile">
+            <ul class="partners-mobile">
                 <li class="partner-logo"><img class="partner-icon" src="images/google-logo.png" alt="google logo"></li>
                 <li class="partner-logo"><img class="partner-icon" src="images/intel-png.png" alt="intel logo"></li>
                 <li class="partner-logo"><img class="partner-icon" src="images/cisco-png.png" alt="logokpu"></li>
-              </ul>
+            </ul>
             <ul class="partners-second-line">
                 <li class="partner-logo"><img class="partner-icon" src="images/microsoft-logo.png" alt="microsoft logo">
                 </li>
@@ -106,17 +109,26 @@
             </ul>
         </div>
     </section>
-    <footer>
-        <div class="footer-logo">
-            <img src="images/footer.png" alt="company logo">
+    <footer class="about">
+        <div class="about-footer-mobile">
+            <div class="footer-logo">
+                <img src="images/footer.png" alt="company logo">
+            </div>
+            <div class="footer-text-mobile">
+                <h2>2022 Creative Commons. Some Rights Reserved.</h2>
+            </div>
         </div>
-        <div class="footer-text">
-            <h2>2015 Creative Commons Korea. Some Rights Reserved.</h2>
-            <p>jdhjkhdjhjdhjksdhjshjkdhdhhjdsksjdksjkjdksjdkjskdjskjdkjskdjksjdksjdkhsjhjchhjhgvhhgdvjdgjkgjkh</p>
-        </div>
-        <div class="footer-text-mobile">
-            <h2>2015 Creative Commons Korea. Some Rights Reserved.</h2>
+        <div class="about-footer-desktop">
+            <div class="about-footer-logo">
+                <img src="images/footerWhite.png" alt="company logo">
+            </div>
+            <div class="about-footer-text">
+                <h2>2022 Creative Commons. Some Rights Reserved.</h2>
+                <p>Dojo Coding School, developed by Jorge Rios.</p>
+            </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

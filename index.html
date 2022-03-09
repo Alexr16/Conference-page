@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concert Page</title>
+    <title>Bootcamp Page</title>
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="home">
     <div class="social-tab">
         <ul class="social">
             <li class="social-item"><a href="#" class="social-media"><img src="images/facebook_icon.png"
@@ -29,10 +29,10 @@
     </div>
     <header>
         <nav class="nav-bar">
-            <div class="logo"><img src="images/logo.png" alt="logo"></div>
-
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
             <ul class="nav-list">
-                <li class="item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="item"><a class="nav-link mobile-menu" href="index.html">Home</a></li>
+                <li class="item"><a data-active="about" class="nav-link" href="about.html">About</a></li>
                 <li class="item"><a class="nav-link" href="#">Program</a></li>
                 <li class="item"><a class="nav-link" href="#">Join</a></li>
                 <li class="item"><a class="nav-link" href="#">Sponsor</a></li>
@@ -44,15 +44,14 @@
     <Section id="headline">
         <div class="menu">
             <button id="hamburguer" class="menu-icon"><img src="images/mobile_menu.png" alt="hamburguer"></button>
-            <button class="menu-icon close-menu"><img src="images/close_mobile_menu.png" alt="close-icon"></button>
+            <button id="close" class="menu-icon close-menu show"><img src="images/close_mobile_menu.png" alt="close-icon"></button>
         </div>
         <div class="headline-title">
-            <h1>"Hello! Sharing world"</h1>
-            <h2>CREATIVE COMMONS GLOBAL SUMMIT</h2>
-            <p class="headline-paragraph">A joyfull celebration believing in the value of openness and sharing, creating
-                a positive change with people from over 80 countries is taking place in October, in Korea.</p>
-            <h3>2015.10.15(THU) - 16(FRI)</h3>
-            <h4>@National Museum of Korea, Art Center Nabi and more</h4>
+            <h1>"Hello! Developers"</h1>
+            <h2><img class="head-title" src="images/Title.svg" alt="title"></h2>
+            <p class="headline-paragraph">In 10 weeks you can move towards a developing career without giving up your job, studies or other tasks. This program is a flexible alternative that provides full access to our curriculum, accompanied by live instructors and collaboration with your classmates.</p>
+            <h3>2022.07.1(THU) - 16(FRI)</h3>
+            <h4>@Dojo Coding School, developed by Jorge Rios.</h4>
         </div>
     </Section>
     <section id="main-program">
@@ -65,164 +64,78 @@
                 <div class="program-icon"><i class="main-icon-card"><img src="images/program_icon_01.png"
                             alt="Lecture"></i></div>
                 <div class="program-title">
-                    <h3 class="main-card-title">Lecture</h3>
+                    <h3 class="main-card-title">Learning</h3>
                 </div>
                 <div class="program-paragraph">
-                    <p class="main-card-paragraph">Listen to the speakers from various countries about the messeges of
-                        sharing and opening.</p>
+                    <p class="main-card-paragraph">Immerse yourself in our immersive online learning with tutorials and bootcamp partners who are in the same process as you.</p>
                 </div>
             </div>
             <div class="program-list">
                 <div class="program-icon"><i class="main-icon-card"><img src="images/program_icon_02.png"
                             alt="Lecture"></i></div>
                 <div class="program-title">
-                    <h3 class="main-card-title">Lecture</h3>
+                    <h3 class="main-card-title">Schedule</h3>
                 </div>
                 <div class="program-paragraph">
-                    <p class="main-card-paragraph">Listen to the speakers from various countries about the messeges of
-                        sharing and opening.</p>
+                    <p class="main-card-paragraph">Our students must dedicate between 20 and 25 hours per week to this bootcamp, the way is not easy.</p>
                 </div>
             </div>
             <div class="program-list">
                 <div class="program-icon"><i class="main-icon-card"><img src="images/program_icon_03.png"
                             alt="Lecture"></i></div>
                 <div class="program-title">
-                    <h3 class="main-card-title">Lecture</h3>
+                    <h3 class="main-card-title">Github</h3>
                 </div>
                 <div class="program-paragraph">
-                    <p class="main-card-paragraph">Listen to the speakers from various countries about the messeges of
-                        sharing and opening.</p>
+                    <p class="main-card-paragraph">Using the command terminal. How to create and use repositories. Create, track, and roll back changes. Git* overview and workflows.</p>
                 </div>
             </div>
             <div class="program-list">
                 <div class="program-icon"><i class="main-icon-card"><img src="images/program_icon_04.png"
                             alt="Lecture"></i></div>
                 <div class="program-title">
-                    <h3 class="main-card-title">Lecture</h3>
+                    <h3 class="main-card-title">Responsive</h3>
                 </div>
                 <div class="program-paragraph">
-                    <p class="main-card-paragraph">Listen to the speakers from various countries about the messeges of
-                        sharing and opening.</p>
+                    <p class="main-card-paragraph">Breakpoints, units and media queries. Basic concepts of typesetting and scaling.</p>
                 </div>
             </div>
             <div class="program-list">
                 <div class="program-icon"><i class="main-icon-card"><img src="images/program_icon_05.png"
                             alt="Lecture"></i></div>
                 <div class="program-title">
-                    <h3 class="main-card-title">Lecture</h3>
+                    <h3 class="main-card-title">Basics</h3>
                 </div>
                 <div class="program-paragraph">
-                    <p class="main-card-paragraph">Listen to the speakers from various countries about the messeges of
-                        sharing and opening.</p>
+                    <p class="main-card-paragraph">Construction of forms and declaration of input values, containers, elements, attributes.</p>
                 </div>
             </div>
-            <button class="join-button" type="button">Join CC Global Summit 2015</button>
+            <button class="join-button" type="button">Join Summer Bootcamp 2022</button>
         </div>
-    </section>
-    <section id="feature-speakers">
-        <div class="feature-speaker-title">
-            <h2 class="feature-speakers-title">Featured Speakers</h2>
-            <hr>
-        </div>
-        <div class="speakers">
-            <div class="spaeaker-card">
-                <div class="speaker-photo">
-                    <img src="images/speaker_01.png" alt="Speaker 1">
-                </div>
-                <div class="speaker-info">
-                    <h2>Yochai Benkler</h2>
-                    <p class="speaker-subtitle"> Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
-                        School</p>
-                    <hr class="hr-speaker">
-                    <p class="speaker-paragraph">Benkler studies commons-based peer production, and published his
-                        seminal book The Wealth of
-                        Networks in 2006.</p>
-                </div>
-            </div>
-            <div class="spaeaker-card">
-                <div class="speaker-photo">
-                    <img src="images/speaker_02.png" alt="Speaker 2">
-                </div>
-                <div class="speaker-info">
-                    <h2>Yochai Benkler</h2>
-                    <p class="speaker-subtitle"> Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
-                        School</p>
-                    <hr class="hr-speaker">
-                    <p class="speaker-paragraph">Benkler studies commons-based peer production, and published his
-                        seminal book The Wealth of
-                        Networks in 2006.</p>
-                </div>
-            </div>
-            <div class="spaeaker-card">
-                <div class="speaker-photo">
-                    <img src="images/speaker_03.png" alt="Speaker 3">
-                </div>
-                <div class="speaker-info">
-                    <h2>Yochai Benkler</h2>
-                    <p class="speaker-subtitle"> Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
-                        School</p>
-                    <hr class="hr-speaker">
-                    <p class="speaker-paragraph">Benkler studies commons-based peer production, and published his
-                        seminal book The Wealth of
-                        Networks in 2006.</p>
-                </div>
-            </div>
-            <div class="spaeaker-card">
-                <div class="speaker-photo">
-                    <img src="images/speaker_04.png" alt="Speaker 4">
-                </div>
-                <div class="speaker-info">
-                    <h2>Yochai Benkler</h2>
-                    <p class="speaker-subtitle"> Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
-                        School</p>
-                    <hr class="hr-speaker">
-                    <p class="speaker-paragraph">Benkler studies commons-based peer production, and published his
-                        seminal book The Wealth of
-                        Networks in 2006.</p>
-                </div>
-            </div>
-            <div class="spaeaker-card">
-                <div class="speaker-photo">
-                    <img src="images/speaker_07.png" alt="speaker 5">
-                </div>
-                <div class="speaker-info">
-                    <h2>Yochai Benkler</h2>
-                    <p class="speaker-subtitle"> Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
-                        School</p>
-                    <hr class="hr-speaker">
-                    <p class="speaker-paragraph">Benkler studies commons-based peer production, and published his
-                        seminal book The Wealth of
-                        Networks in 2006.</p>
-                </div>
-            </div>
-            <div class="spaeaker-card">
-                <div class="speaker-photo">
-                    <img src="images/speaker_06.png" alt="speaker 6">
-                </div>
-                <div class="speaker-info">
-                    <h2>Yochai Benkler</h2>
-                    <p class="speaker-subtitle"> Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
-                        School</p>
-                    <hr class="hr-speaker">
-                    <p class="speaker-paragraph">Benkler studies commons-based peer production, and published his
-                        seminal book The Wealth of
-                        Networks in 2006.</p>
-                </div>
-            </div>
-        </div>
+        <h4>SEE  THE WHOLE PROGRAM</h4>
     </section>
     <section id="partner">
         <div class="partner-title">
             <h2>Partner</h2>
             <hr class="hr-partner">
         </div>
+        <div class="partners-logos-mobile">
+            <ul class="partners-mobile">
+                <li class="partner-logo"><img class="partner-icon" src="images/google-logo.png" alt="google logo"></li>
+                <li class="partner-logo"><img class="partner-icon" src="images/intel-png.png" alt="intel logo"></li>
+                <li class="partner-logo"><img class="partner-icon" src="images/cisco-png.png" alt="logokpu"></li>
+            </ul>
+            <ul class="partners-second-line">
+                <li class="partner-logo"><img class="partner-icon" src="images/microsoft-logo.png" alt="microsoft logo">
+                </li>
+                <li class="partner-logo"><img class="partner-icon" src="images/tokopedia.png" alt="tokopedia logo"></li>
+            </ul>
+        </div>
         <div class="partners-logos">
             <ul class="partners">
                 <li class="partner-logo"><img class="partner-icon" src="images/google-logo.png" alt="google logo"></li>
                 <li class="partner-logo"><img class="partner-icon" src="images/intel-png.png" alt="intel logo"></li>
                 <li class="partner-logo"><img class="partner-icon" src="images/cisco-png.png" alt="logokpu"></li>
-              </ul>
-            <ul class="partners-second-line">
                 <li class="partner-logo"><img class="partner-icon" src="images/microsoft-logo.png" alt="microsoft logo">
                 </li>
                 <li class="partner-logo"><img class="partner-icon" src="images/tokopedia.png" alt="tokopedia logo"></li>
@@ -234,14 +147,14 @@
             <img src="images/footer.png" alt="company logo">
         </div>
         <div class="footer-text">
-            <h2>2015 Creative Commons Korea. Some Rights Reserved.</h2>
-            <p>jdhjkhdjhjdhjksdhjshjkdhdhhjdsksjdksjkjdksjdkjskdjskjdkjskdjksjdksjdkhsjhjchhjhgvhhgdvjdgjkgjkh</p>
+            <h2>2022 Creative Commons.</h2>
+            <p>Dojo Coding School, developed by Jorge Rios.</p>
         </div>
         <div class="footer-text-mobile">
-            <h2>2015 Creative Commons Korea. Some Rights Reserved.</h2>
+            <h2>2022 Creative Commons. Some Rights Reserved.</h2>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
