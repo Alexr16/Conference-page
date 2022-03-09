@@ -20,7 +20,7 @@ To get a local copy up and running follow these simple example steps.
 - Pc with any OS.
 - IDE
 
-### DLive Demo
+### Live Demo
 For live demo [clic here](https://alexr16.github.io/Conference-page/).
 ## Author
 
